@@ -5,4 +5,6 @@ Feature: Navigation Menu
     Given the user logged in as "salesManager"
     Then the user should be able to login
     When the user navigates to "Fleet", "Vehicles"
-    Then the title should be "Vehicles"
+    Then the title contains "Car"
+
+    #
