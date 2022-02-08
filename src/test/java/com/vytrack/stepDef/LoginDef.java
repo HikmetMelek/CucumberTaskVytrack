@@ -76,12 +76,12 @@ public class LoginDef {
                 password= ConfigurationReader.get("driver_password");
                 loginPage.login(username,password);
                 break;
-            case "storeManager":
+            case "store_manager":
                 username= ConfigurationReader.get("store_manager_username");
                 password= ConfigurationReader.get("store_manager_password");
                 loginPage.login(username,password);
                 break;
-            case "salesManager":
+            case "sales_manager":
                 username= ConfigurationReader.get("sales_manager_username");
                 password= ConfigurationReader.get("sales_manager_password");
                 loginPage.login(username,password);

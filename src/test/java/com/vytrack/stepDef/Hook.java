@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Hook {
     @Before
     public void setUp(){
-    System.out.println("before method");
+    System.out.println("BEFORE METHOD..");
     Driver.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
@@ -19,5 +19,9 @@ public class Hook {
     public void tearDown(){
         BrowserUtils.waitFor(1);
         Driver.closeDriver();
+    }
+    @Before("@db")
+    public void setUpdb(){
+        System.out.println("\tconnecting to database...");
     }
 }

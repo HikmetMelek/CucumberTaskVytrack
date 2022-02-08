@@ -6,9 +6,9 @@ Feature: Login as different users
     Then the user should be able to login
     And the title contains "Dashboard"
 
-        #homework
-  Scenario: login as a user(driver,storeManager,salesManager)
-    Given the user logged in as "salesManager"
+      #homework
+  Scenario: login as a user(driver,store_manager,sales_manager)
+    Given the user logged in as "sales_manager"
     Then the user should be able to login
     And the title contains "Dashboard"
     #usertype: driver,storemanager,salesmanager
