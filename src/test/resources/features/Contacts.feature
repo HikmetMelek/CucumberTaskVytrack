@@ -10,7 +10,8 @@ Feature: Contacts page
     Given the user is on the login page
     And the user enters the sales manager information
     When the user navigates to "Activities", "Calendar Events"
-    Then the title contains "Calendar"
+    Then the title contains "Calendars"
+   # to take report make some fail: Calendars in order to Calendar
 
   Scenario: Menu Options Driver
     Given the user logged in as "driver"
@@ -32,7 +33,7 @@ Feature: Contacts page
       | Reports & Segments |
       | System             |
     And the title contains "Dashboard"
-  @wip
+
   Scenario: login as a given user
     Given the user is on the login page
     When the user logs in using following credentials
@@ -41,3 +42,17 @@ Feature: Contacts page
       | firstname | John        |
       | lastname  | Doe         |
     Then the user should be able to login
+@wip
+  Scenario Outline: login as a given user <user>
+    Given the user is on the login page
+    When the user logs in using following credentials
+      | username  | <user>      |
+      | password  | UserUser123 |
+      | firstname | <firstN>    |
+      | lastname  | <lastN>     |
+  Then the user should be able to login
+    Examples:
+      | user           | firstN | lastN |
+      | user10         | John   | Doe   |
+      | storemanager85 | John   | Doe   |
+
