@@ -68,25 +68,23 @@ public class LoginDef {
     public void the_user_logged_in_as(String userType) {
         Driver.get().get(ConfigurationReader.get("url"));
         LoginPage loginPage= new LoginPage();
-        String username;
-        String password;
+        String username="";
+        String password="";
         switch (userType){
             case "driver":
                 username= ConfigurationReader.get("driver_username");
                 password= ConfigurationReader.get("driver_password");
-                loginPage.login(username,password);
                 break;
-            case "store_manager":
+            case "store manager":
                 username= ConfigurationReader.get("store_manager_username");
                 password= ConfigurationReader.get("store_manager_password");
-                loginPage.login(username,password);
                 break;
-            case "sales_manager":
+            case "sales manager":
                 username= ConfigurationReader.get("sales_manager_username");
                 password= ConfigurationReader.get("sales_manager_password");
-                loginPage.login(username,password);
                 break;
         }
+        loginPage.login(username,password);
     }
 
 

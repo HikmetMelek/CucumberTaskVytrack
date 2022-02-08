@@ -18,10 +18,16 @@ public class Hook {
     @After
     public void tearDown(){
         BrowserUtils.waitFor(1);
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
     @Before("@db")
     public void setUpdb(){
         System.out.println("\tconnecting to database...");
+    }
+
+    @After("@db")
+    public void closeDb(){
+        System.out.println("\tdisconnecting to database...");
+
     }
 }
