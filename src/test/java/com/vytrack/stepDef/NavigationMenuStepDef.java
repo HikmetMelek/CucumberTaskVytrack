@@ -14,8 +14,8 @@ public class NavigationMenuStepDef {
     }
 
     @Then("the title should be {string}")
-    public void the_title_should_be(String moduleTitle) {
-        BrowserUtils.waitFor(2);
-        Assert.assertTrue(Driver.get().getTitle().contains(moduleTitle));
+    public void the_title_should_be(String title) {
+        BrowserUtils.waitFor(3);
+        Assert.assertTrue(Driver.get().getTitle().contains(title));
     }
 }
