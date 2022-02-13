@@ -1,4 +1,4 @@
-package com.vytrack.stepDef;
+package com.vytrack.stepDefinitions;
 
 import com.vytrack.pages.DashboardPage;
 import com.vytrack.pages.LoginPage;
@@ -6,7 +6,6 @@ import com.vytrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 import java.util.Map;

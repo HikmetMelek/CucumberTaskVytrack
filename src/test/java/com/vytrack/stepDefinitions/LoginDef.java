@@ -1,4 +1,4 @@
-package com.vytrack.stepDef;
+package com.vytrack.stepDefinitions;
 
 import com.vytrack.pages.LoginPage;
 import com.vytrack.utilities.BrowserUtils;

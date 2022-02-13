@@ -10,9 +10,9 @@ public class ConfigurationReader {
 
         try {
             String path="configuration.properties";
-            FileInputStream fileInputStream= new FileInputStream(path);
+            FileInputStream fileInput= new FileInputStream(path);
             properties=new Properties();
-            properties.load(fileInputStream);
+            properties.load(fileInput);
 
         }catch (Exception e){
             e.printStackTrace();
@@ -21,6 +21,7 @@ public class ConfigurationReader {
     }
 
     public static String get(String key){
+
         return properties.getProperty(key);
     }
 }

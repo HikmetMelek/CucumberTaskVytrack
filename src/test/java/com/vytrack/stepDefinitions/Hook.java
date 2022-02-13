@@ -1,4 +1,4 @@
-package com.vytrack.stepDef;
+package com.vytrack.stepDefinitions;
 
 import com.vytrack.utilities.BrowserUtils;
 import com.vytrack.utilities.Driver;

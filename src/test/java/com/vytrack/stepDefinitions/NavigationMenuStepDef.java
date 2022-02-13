@@ -1,4 +1,4 @@
-package com.vytrack.stepDef;
+package com.vytrack.stepDefinitions;
 
 import com.vytrack.pages.ContactsPage;
 import com.vytrack.pages.DashboardPage;
