@@ -1,11 +1,11 @@
-@navigate @smoke
+@smoke
 Feature: Navigation Menu
- @db
+
   Scenario: Navigating Fleet -- Vehicles
     Given the user logged in as "sales manager"
     Then the user should be able to login
     When the user navigates to "Fleet", "Vehicles"
-    Then the title contains "Car"
+    Then the title contains "All - Car"
 
   Scenario: Navigating Marketing -- Campaigns
     Given the user logged in as "sales manager"
